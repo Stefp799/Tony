@@ -1,7 +1,6 @@
 ---
 // MeetOurTeachers.astro - Clean 3-Card Layout with Tony's Link
 ---
-
 <section class="teachers-section">
   <div class="container">
     <div class="teachers-grid">
@@ -17,7 +16,6 @@
           <a href="/earthworms/tony-busatta/tony-cft" class="origin-link">Watch Tony's Origin Story →</a>
         </div>
       </div>
-
       <!-- Teacher 2: Master Hun Lee -->
       <div class="teacher-card">
         <div class="video-container">
@@ -30,7 +28,6 @@
           <a href="/earthworms/tony-busatta/tony-cft" class="origin-link">Watch Tony's Origin Story →</a>
         </div>
       </div>
-
       <!-- Teacher 3: Tony Busatta -->
       <div class="teacher-card">
         <div class="video-container">
@@ -46,52 +43,43 @@
     </div>
   </div>
 </section>
-
 <style>
 .teachers-section {
-  padding: 10px 40px 80px 40px;
+  padding: 10px 40px 25px 40px;
   background-color: #f8f9fa;
 }
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .teachers-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
 }
-
 .teacher-card {
   background: white;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: none;
   transition: transform 0.3s ease;
 }
-
 .teacher-card:hover {
   transform: translateY(-5px);
 }
-
 .video-container iframe {
   width: 100%;
   height: 200px;
   border: none;
 }
-
 .card-content {
   padding: 15px;
 }
-
 .teacher-description {
   font-size: 14px;
   line-height: 1.4;
   color: #000000;
   margin: 0;
 }
-
 .origin-link {
   display: inline-block;
   margin-top: 10px;
@@ -103,11 +91,9 @@
   letter-spacing: 1px;
   transition: opacity 0.3s ease;
 }
-
 .origin-link:hover {
   opacity: 0.7;
 }
-
 /* Responsive */
 @media (max-width: 768px) {
   .teachers-grid {
@@ -115,7 +101,6 @@
     gap: 20px;
   }
 }
-
 @media (max-width: 1024px) and (min-width: 769px) {
   .teachers-grid {
     grid-template-columns: 1fr 1fr;
